@@ -1,7 +1,14 @@
 import React from 'react'
+import BootstrapCarousel from '../components/Carousel'  
 
-export default function Home() {
-  return (
-    <div>Home</div>
-  )
-}
+
+function App() {  
+  return (  
+  
+    <div className="App">  
+      <BootstrapCarousel></BootstrapCarousel>  
+    </div>  
+  );  
+}  
+  
+export default App;  
