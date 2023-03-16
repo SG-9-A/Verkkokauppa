@@ -1,20 +1,40 @@
-import React from "react"
+import React from 'react';
+import {
+    MDBFooter,
+    MDBContainer,
+    MDBCol,
+    MDBRow,
+    MDBInput,
+    MDBBtn
+} from 'mdb-react-ui-kit';
 
-export default function Footer() {
+export default function App() {
     return (
-        <footer className="footer">
-            <div className="container-fluid">
-                <footer class="py-3 my-4 fixed-bottom">
-                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-                    </ul>
-                    <p class="text-center text-muted">&copy; 2023 Kumppari, Inc</p>
-                </footer>
+        <MDBFooter bgColor='light' className='fixed-bottom text-center text-lg-left'>
+            <MDBContainer className='p-4 pb-0'>
+                <form action=''>
+                    <MDBRow>
+                        <MDBCol size='auto' className='mb-4 mb-md-0'>
+                            <p className='pt-2'>
+                                <strong>Tilaa uutiskirjeemme:</strong>
+                            </p>
+                        </MDBCol>
+
+                        <MDBCol md='5' size='12' className='mb-4 mb-md-0'>
+                            <MDBInput type='text' id='form5Example2' label='Sähköpostiosoite' />
+                        </MDBCol>
+
+                        <MDBCol size='auto' className='mb-4 mb-md-0'>
+                            <MDBBtn>Tilaa</MDBBtn>
+                        </MDBCol>
+                    </MDBRow>
+                </form>
+            </MDBContainer>
+
+            <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+                &copy; {new Date().getFullYear()} Copyright:{' '}
+                    NETSHOP
             </div>
-        </footer>
-    )
+        </MDBFooter>
+    );
 }
