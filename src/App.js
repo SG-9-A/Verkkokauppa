@@ -4,7 +4,8 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Header from './components/Header';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
 
 
 
@@ -14,7 +15,7 @@ function App() {
   return (
     <>
       <Header />
-      <Navbar />
+      <Sidebar />
       
       <div className="container">
         
